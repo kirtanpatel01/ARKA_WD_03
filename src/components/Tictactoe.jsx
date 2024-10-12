@@ -70,7 +70,7 @@ function Tictactoe() {
   return (
     <div className="text-center">
       <h1 ref={titleRef} className="text-white text-3xl font-bold my-14 flex justify-center items-center">
-        Tic Tac Toe game in <span className="text-teal-500"> React</span>
+        Tic Tac Toe game in &nbsp;<span className="text-teal-500">React</span>
       </h1>
       <div className="h-[495px] w-[564px] flex m-auto justify-center flex-wrap">
         {Array.from({ length: 9 }, (_, i) => renderBox(i))}
