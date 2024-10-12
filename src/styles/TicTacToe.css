@@ -1,0 +1,36 @@
+/* Scale and fade-in animation for the placed X or O */
+.fade-in {
+    animation: fadeIn 0.4s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .animate-scale {
+    animation: scaleUp 0.2s ease-in-out;
+  }
+  
+  @keyframes scaleUp {
+    0% {
+      transform: scale(0.7);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Smooth transition for boxes */
+  .boxes {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .boxes.placed {
+    transform: scale(1.1);
+  }
+  
