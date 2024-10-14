@@ -52,7 +52,7 @@ function Tictactoe() {
     setLock(false);
     setData(initialData);
     setCount(0);
-    titleRef.current.innerHTML = `Tic Tac Toe game in <span class="text-teal-500">React</span>`;
+    titleRef.current.innerHTML = `Tic Tac Toe game in &nbsp;<span class="text-teal-500">React</span>`;
     boxRefs.forEach(box => {
       box.current.classList.remove("placed");
       box.current.innerHTML = "";
